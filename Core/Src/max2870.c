@@ -203,7 +203,7 @@ double max2870_set_rf_out_a(double freq) {
   }
   n = floor(f_vco / f_pfd);
 
-  fractional = f_vco - n;
+  fractional = f_vco / f_pfd - n;
   //m = 4000;
   m = 4095;
   frac = round(m * fractional);
